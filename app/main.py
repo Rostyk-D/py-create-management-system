@@ -8,6 +8,7 @@ class Specialty:
     name: str
     number: int
 
+
 @dataclasses.dataclass
 class Student:
     first_name: str
@@ -18,11 +19,13 @@ class Student:
     phone_number: str
     address: str
 
+
 @dataclasses.dataclass
 class Group:
     specialty: Specialty
     course: int
     students: list[Student]
+
 
 def write_groups_information(groups: list) -> int:
     max_students = 0
